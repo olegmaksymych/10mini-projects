@@ -21,8 +21,8 @@ A desktop Pomodoro timer built in Tkinter. Includes customizable work/break inte
 ## 5. CLI Password Manager
 A secure command-line credential store. Prompts for a master password, encrypts entries with AES, and saves them to a local file—no plaintext exposure.
 
-## 6. GUI Password Manager
-A Tkinter front-end for the CLI manager. Provides login, vault view, password generation, and clipboard copy features, all backed by AES-encrypted storage.
+## 6. Workout Tracking Using Google Sheets
+A Python CLI tool that lets users log workouts in natural language and automatically tracks calories burned and workout details in a Google Sheet.
 
 ## 7. Email Sender & Date Manager
 A script that combines Python’s `smtplib` and `datetime` modules to send templated emails with dynamic date handling and command-line scheduling options.
@@ -64,10 +64,10 @@ Automates flight-deal tracking by reading destinations and price thresholds from
    * Encrypted/decrypted stored credentials using AES
    * Saved to and read from a local file, preventing plaintext exposure
 
-6. GUI Password Manager
-   * Built login and vault windows in Tkinter
-   * Integrated AES-based storage from the CLI version
-   * Added “copy to clipboard” and entry/edit forms
+6. Workout Tracking Using Google Sheets
+   * A Python CLI that parses natural-language workout entries (e.g., “30 min yoga”), fetches duration and calories via Nutritionix’s Exercise API, and timestamps each session.
+   * Securely manages credentials through environment variables (APP_ID, API_KEY, SHEETY_TOKEN) and sends structured workout data to a Google Sheet using the Sheety API.
+   * Automates end-to-end workout logging—input, calorie computation, and cloud storage—without manual spreadsheet editing.
 
 7. Email Sender & Date Manager
    * Sent templated emails via `smtplib`
